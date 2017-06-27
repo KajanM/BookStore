@@ -1,9 +1,9 @@
-package com.pluralsight.bookstore.model;
+package com.pluralsight.bookstore.repository;
+
+import com.pluralsight.bookstore.model.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceUnit;
-import java.security.PrivateKey;
 
 /**
  * Created by k4j4n on 6/27/17.
@@ -26,3 +26,7 @@ public class BookRepository {
         em.remove(em.getReference(Book.class, id));
     }
 }
+
+
+
+
